@@ -62,6 +62,10 @@ nav a {
     font-size: 16px;
     color: #15163D;
 }
+.icon-menu, 
+nav .icon-cerrar {
+     display: none;
+}
 
 main img, header img {
     width: 100%;
@@ -103,9 +107,19 @@ header a, section a {
 }
  footer ul { 
     width: 16.66%;
+    font-weight: 300;
 }
  footer p { 
     width: 100%;
+}
+footer { 
+    justify-content: flex-start; 
+    align-items: flex-start;
+    background-color:  #15163D; 
+    width: 100%;
+     color: white;
+    padding:68px 0  68px 8.33%  ;
+    
 }
 
 section:nth-child(3){
@@ -139,7 +153,6 @@ section:nth-child(3) div img {
     clip-path: circle(44% at 50% 50%);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); 
     object-fit: fill;
-    overflow: hidden;
 }
 
 section:nth-child(3) div {
@@ -149,7 +162,58 @@ section:nth-child(3) div {
     padding: 1.42rem 3.31rem;
     text-align: center;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); 
+    position: relative;
 }
+
+.middle a { 
+    width: auto;
+}
+section:nth-child(3) div:hover .middle { 
+    opacity:1;
+}
+ section:nth-child(3) .middle{
+    opacity: 0;
+    position: absolute;
+    background-color: white;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    transition: all 3s;
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+    text-align: center;
+    border:1px solid black;
+    border-radius:20px;
+    z-index: 50;
+}
+
+
+
+#modal { 
+    z-index: 2;
+    width: 100%; 
+    height: 100%; 
+    background-color:white; 
+    position:fixed; 
+    width: 100%; 
+    height: 100%; 
+    top: 0; 
+    left:0; display: flex; 
+    align-items: center;  
+    flex-direction: column; 
+    display:none;}
+
+#modal p { 
+    padding: 1em;  
+    text-align: center; 
+    width: 50%;  
+}
+#modal .icon-cerrar { 
+    align-self: flex-end;  
+}
+
 
 /* Medias Query*/
 
@@ -165,6 +229,10 @@ section:nth-child(3) div {
     nav img { width: 8.33%;}
     .cuarenta { 
         order: -1;
+    }
+
+    section div:hover .middle { 
+        width: 100%;
     }
 
     section:nth-child(3) div {
