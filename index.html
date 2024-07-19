@@ -7,46 +7,58 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Proyecto Integrador</title>
     <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
+    <div id="modal">
+   
+        <span class="icon-cerrar" onclick="cerrarModal()">CERRAR</span>
+        
+        <p> Envianos un correo a <a href="mailto:mailto@info.com">mailTo</a></p>
+    
+    
+    </div> 
     <nav>
       
         <img src="imagenes/AD.png" alt=""></div>
-<div>
-        <a href="#">About</a>
+        <div id="desplegable">
+            <span class="icon-cerrar" onclick="cerrar()"></span>
+            <a href="#">About</a>
+            <a href="#">Testimonios</a>
+            <a href="#" onclick="abrirModal()">Contacto</a></div>
+        </div>
 
-        <a href="#">Testimonios</a>
-        <a href="#">Contacto</a></div></div>
+        <span class="icon-menu" onclick="abrir()"></span>
     </nav>
     <header>
         <div class="cuarenta">
-        <h1>Creando Experencia y Marca</h1>
+            <h1>Creando Experencia y Marca</h1>
 
-        <p>Agencia Digital al servicio del cliente y de su marca.
-        </p>
-    <a href="#">contactános</a>
+            <p>Agencia Digital al servicio del cliente y de su marca.</p>
+            <a href="#" onclick="abrirModal()">contactános</a>
     
-    </div>
-<div>
-        <img src="imagenes/img1.png" alt="">
-    </div>
+        </div>
+        <div>
+            <img src="imagenes/img1.png" alt="">
+        </div>
     </header>
 
     <main>
 
         <section>
-<div>
-            <img src="imagenes/img2.png" alt="">
-        </div>
-         <div class="cuarenta">
-            <h2>Diseño de Marca e Imagen</h2>
+            <div>
+                <img src="imagenes/img2.png" alt="">
+            </div>
+            <div class="cuarenta">
+                <h2>Diseño de Marca e Imagen</h2>
 
 
 
-            <p>Comúnmente utilizado en la industria gráfica, de impresión y publicación.
-            </p></div>   
+                <p>Comúnmente utilizado en la industria gráfica, de impresión y publicación.
+                </p></div>   
         </section>
+
         <section>
             <div class="cuarenta">
             <h2>Desarrollo de Marca</h2>
@@ -56,38 +68,63 @@
 
         </section>
 
+        <!-- Testimonios -->
+        <section>
+            <h4>Testimonios</h4>
+            <h2>Nuestros clientes hablan</h2>
 
-   <section>
-    <div>
-<img src="imagenes/img4.png"></div>
-<div class="cuarenta">
+            <div>
+                <img src="/imagenes/AndresGarcia.png" alt="Andres García">
+                
+                <h3>Andres García</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ullamcorper scelerisque mi, in malesuada felis malesuada vel.</p>
+            </div>
+            <div>
+                <img src="/imagenes/VeraRodriguez.png" alt="Vera Rodriguez">
+                
+                <h3>Vera Rodriguez</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ullamcorper scelerisque mi, in malesuada felis malesuada vel. </p>
+            </div>
+            <div>
+                <img src="/imagenes/MariaSanchez.png" alt="María Sanchez">
+                
+                <h3>María Sanchez</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ullamcorper scelerisque mi, in malesuada felis malesuada vel.</p>
+            </div>
 
-<h2>Formá parte de nuestro equipo</h2>
-<p>visitá nuestro perfil de LinkedIn</p>
+        </section>
+    
 
-<a href="#">contactános</a>
+        <section>
+                <div>
+                    <img src="imagenes/img4.png"></div>
+                <div class="cuarenta">
 
+                <h2>Formá parte de nuestro equipo</h2>
+                <p>visitá nuestro perfil de LinkedIn</p>
 
-   </section>     
+                <a href="#"  onclick="abrirModal()">contactános</a>
+
+        </section>     
    
 
     </main>
     <footer>
-<ul>
-<li>Redes</li>
-<li>LinkedIn</li>
-<li>Facebook</li>
-<li>Instragram</li>
-<li>Twitter</li>
-</ul>
+        <ul>
+            <li>Redes</li>
+            <li>LinkedIn</li>
+            <li>Facebook</li>
+            <li>Instragram</li>
+            <li>Twitter</li>
+        </ul>
 
-<ul>
-    <li>Agencia Digital</li>
-    <li>creando experiencias </li>
-    </ul>
-<p>@Todos los derechos reservados</p>
-
+        <ul>
+            <li>Agencia Digital</li>
+            <li>creando experiencias </li>
+        </ul>
+        <p>@Todos los derechos reservados</p>
     </footer>
+    <script src="/js/codigo.js"></script>
 </body>
 
 </html>
